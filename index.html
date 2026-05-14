@@ -120,6 +120,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 <header class="header">
 <div class="header-top">
@@ -143,7 +179,7 @@ header.hero, .hero { position: relative !important; }
 <h2>Scope of work</h2><div>London’s subsurface is dominated by the London Clay Formation, a stiff, fissured overconsolidated clay that can reach depths of over 100 meters in the central basin. This clay is underlain by the Lambeth Group and Thanet Sand Formation, with the chalk bedrock appearing at greater depths. Groundwater is typically confined within the deeper aquifers, though perched water tables can occur within granular layers. The region experiences low seismic hazard, but geotechnical challenges include swelling and shrinkage of clay due to seasonal moisture changes, and the presence of historical made ground from centuries of urban development. In the Thames Valley, alluvial deposits and river terrace gravels add variability, requiring careful assessment for shallow foundations and retaining structures. Understanding these conditions is critical for safe and economical design, particularly for deep excavations and tunnelling projects.</div>
 <h2>Area-specific notes</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<p>Our firm brings consolidated regional experience to every London project, having worked extensively with the London Clay and other local formations. We maintain calibrated laboratory equipment and field instrumentation to deliver accurate, code-compliant reports. Our team coordinates directly with local contractors, planning authorities, and building control bodies to streamline approvals and mitigate risks. By staying current with evolving standards and local practices, we provide geotechnical solutions that are both technically sound and contextually appropriate, supporting safe and efficient development across the capital.</p>
+<p>Our firm brings consolidated regional experience to every London project, having worked extensively with the London Clay and other local formations. We maintain calibrated <a href="/laboratory/">laboratory</a> equipment and field instrumentation to deliver accurate, code-compliant reports. Our team coordinates directly with local contractors, planning authorities, and building control bodies to streamline approvals and mitigate risks. By staying current with evolving standards and local practices, we provide geotechnical solutions that are both technically sound and contextually appropriate, supporting safe and efficient development across the capital.</p>
 <section class="block mid-cta-1063-1063" style="padding:2rem 0">
 <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#A1620715,#A1620708);border-left:4px solid #A16207;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
 <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>

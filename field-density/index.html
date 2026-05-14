@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <header class="header">
@@ -177,6 +213,8 @@ header.hero, .hero { position: relative !important; }
           <div class="sub-svc"><div class="sub-svc-num" style="color:#A16207;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#14532D;font-size:1.1rem;margin:.3rem 0 .5rem">Sand Cone Density (BS 1377-9)</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Standard sand replacement test for cohesive and granular fills. Includes calibrated sand, volume measurement, moisture content, and dry density report.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A16207;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#14532D;font-size:1.1rem;margin:.3rem 0 .5rem">Nuclear Gauge Density</h3><p style="color:#333;line-height:1.65;font-size:.93rem">High-volume compaction control using a troxler gauge for London infrastructure projects. Faster than sand cone but requires radioactive source licensing.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A16207;font-weight:700;font-size:.85rem;letter-spacing:.1em">03</div><h3 style="color:#14532D;font-size:1.1rem;margin:.3rem 0 .5rem">Compaction Test Package (Proctor + Field Density)</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Combined lab <a href="../standard-modified/" data-interlink="1">Proctor test</a> to establish target MDD and OMC, followed by field sand cone tests to verify compliance on site.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A16207;font-weight:700;font-size:.85rem;letter-spacing:.1em">04</div><h3 style="color:#14532D;font-size:1.1rem;margin:.3rem 0 .5rem">Large-volume Fill Density (Trench & Foundation)</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Multiple sand cone tests per lift for deep utility trenches and foundation backfills in London clay and made ground.</p></div>
         </div>
       </div>
+<section class="block" style="padding:1.5rem"><div style="max-width:1200px;margin:0 auto"><p style="margin-top:0">This service complements our <a href="/laboratory/">laboratory testing</a> work for a complete project analysis.</p></div></section>
+
     </section>
 
         <h2>Typical parameters</h2>

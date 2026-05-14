@@ -124,6 +124,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 <header class="header">
 <div class="header-top">
@@ -146,7 +182,7 @@ header.hero, .hero { position: relative !important; }
 <blockquote style="border-left:4px solid #A16207;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">Designing sheet pile walls in London means balancing high lateral pressures from Thames gravels with tight deflection limits near existing structures.</blockquote>
 <h2>Scope of work</h2><div>The Thames gravels beneath central London can reach 6 m in thickness, with cobbles that complicate pile driving. We handle this by specifying the right pile section and driving method from the start. Our process includes: <ul><li>Classification of soil layers from trial pits and rotary cores</li><li>Measurement of shear strength via triaxial and direct shear tests</li><li>Groundwater monitoring to define seepage gradients behind the wall</li></ul> Each parameter feeds into the wall design model. When the retained height exceeds 4 m, we recommend a <a href="../retaining-wall-design/">tie-back anchor system</a> to reduce bending moments, and for long-term corrosion resistance we specify steel grade S355GP with a sacrificial thickness allowance per Eurocode 3. This layered approach gives our clients a sheet pile wall that performs in London's variable ground.</div>
 <figure style="margin:1.5rem auto;max-width:60%;border-radius:6px;overflow:hidden;border:1px solid #E5E5E5"></figure>
-<h2>Area-specific notes</h2><p>A recent basement excavation near Blackfriars required a 9 m high sheet pile wall only 2 m from a listed railway viaduct. The biggest risk was excessive lateral movement during the dredge sequence. We modelled the wall in stages using a finite‑element code that accounted for the high stiffness of the London Clay and the low stiffness of the underlying gravels. A single-phase installation without pre‑augering would have caused vibrations that could damage the viaduct foundations. By specifying a silent vibratory hammer and pre‑drilling through the gravel layer, we kept peak particle velocity below 12 mm/s and maintained wall alignment within 25 mm of vertical.</p>
+<h2>Area-specific notes</h2><p>A recent basement excavation near Blackfriars required a 9 m high sheet pile wall only 2 m from a listed railway viaduct. The biggest risk was excessive lateral movement during the dredge sequence. We modelled the wall in stages using a finite‑element code that accounted for the high stiffness of the London Clay and the low stiffness of the underlying gravels. A single-phase installation without pre‑augering would have caused vibrations that could damage the viaduct <a href="/foundations/">foundations</a>. By specifying a silent vibratory hammer and pre‑drilling through the gravel layer, we kept peak particle velocity below 12 mm/s and maintained wall alignment within 25 mm of vertical.</p>
 <section class="block mid-cta-1063-1063" style="padding:2rem 0">
 <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#A1620715,#A1620708);border-left:4px solid #A16207;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
 <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
